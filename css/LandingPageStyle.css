@@ -1,0 +1,25 @@
+.conrainer {
+    padding: 15px 0;
+    width: auto;
+    height: auto;
+}
+
+.conrainer h2,
+a {
+    text-align: center;
+    display: block;
+    color: #ffffff;
+    padding: 15px 0;
+}
+
+.conrainer .GoToGameBoard {
+    padding: 10px 10px;
+    background-color: #f1c40f;
+    width: 50%;
+    height: auto;
+    margin: 0 auto;
+    font-family: sans-serif;
+    color: black;
+    font-size: 15pt;
+    text-decoration: none;
+}

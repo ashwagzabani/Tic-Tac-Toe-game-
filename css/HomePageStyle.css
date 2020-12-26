@@ -1,0 +1,53 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    background-color: #609EA1;
+}
+
+#header {
+    background-color: #609EA1;
+}
+
+#header #logo {
+    width: 340px;
+    display: block;
+    margin: 0 auto;
+}
+
+#iframe {
+    display: block;
+    margin: 0 auto;
+    width: 50%;
+    height: 500px;
+    border: none;
+}
+
+#footer {
+    width: 100%;
+    background-color: #609EA1;
+}
+
+#footer p {
+    font-size: 14pt;
+    text-align: center;
+    padding: 5px 0;
+}
+
+@media screen and (min-width: 370px) and (max-width: 980px) {
+    #header #logo {
+        width: 50%;
+    }
+    #iframe {
+        width: 95%;
+    }
+    #footer p {
+        padding: 7px 0;
+    }
+    html {
+        max-height: auto !important;
+        overflow: hidden;
+    }
+}

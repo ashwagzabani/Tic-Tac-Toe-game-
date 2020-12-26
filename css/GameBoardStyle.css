@@ -1,0 +1,149 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    font-family: 'Prompt', sans-serif;
+    border: 2px white solid;
+    background-color: #609EA1;
+}
+
+.container #leaveGame {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 5px 5px;
+    margin: 3px 3px 0 0;
+    color: white;
+    font-size: 15pt;
+    background-color: transparent;
+    border: none;
+    text-decoration: none;
+}
+
+.container .header {
+    display: flex;
+    font-family: 'Balsamiq', sans-serif;
+    flex-direction: row;
+    justify-content: space-around;
+    color: white;
+    padding-top: 30px;
+}
+
+.container .header #player1,
+#player2 {
+    padding: 10px 20px;
+}
+
+.container .gameBoard {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 90px);
+    justify-content: center;
+    padding: 20px;
+}
+
+.container .gameBoard .blocks {
+    font-size: 45pt;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    cursor: pointer;
+}
+
+.container .gameBoard #block2,
+#block5,
+#block8 {
+    border-right: 5px black solid;
+    border-left: 5px black solid;
+}
+
+.container .gameBoard #block4,
+#block5,
+#block6 {
+    border-top: 5px black solid;
+    border-bottom: 5px black solid;
+}
+
+.container .gameBoard .popUpMessage,
+.questionReloadLastGame {
+    background-color: #607EA1;
+    opacity: 0.9;
+    border: 1px white solid;
+    width: 300px;
+    height: auto;
+    position: absolute;
+    top: 0;
+    transition: top 1s;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    color: white;
+    visibility: hidden;
+}
+
+.container .gameBoard .popUpMessage,
+.questionReloadLastGame,
+h2,
+h3 {
+    text-align: center;
+    padding-top: 20px;
+}
+
+.container .gameBoard .popUpMessage .nextEven {
+    display: flex;
+    justify-content: center;
+    padding: 10px 0 20px;
+}
+
+.container .gameBoard .questionReloadLastGame .nextEven {
+    display: flex;
+    justify-content: center;
+    padding: 10px 0 20px;
+}
+
+.container .gameBoard .popUpMessage .nextEven .continue,
+.leave {
+    background-color: #f1c40f;
+    color: black;
+    border: none;
+    font-size: 12pt;
+    padding: 5px 5px;
+    margin-right: 5px;
+    text-decoration: none;
+}
+
+.container .gameBoard .questionReloadLastGame .nextEven .continuePlay,
+.newGame {
+    background-color: #f1c40f;
+    color: black;
+    border: none;
+    font-size: 12pt;
+    padding: 5px 5px;
+    margin-right: 5px;
+    text-decoration: none;
+}
+
+.questionReloadLastGame span {
+    padding: 0 5px;
+}
+
+.hover {
+    background-color: #548A8D;
+}
+
+.playing {
+    color: #607EA1;
+    text-decoration: underline;
+}
+
+@media screen and (min-width: 300px) and (max-width: 980px) {
+    #player1,
+    #player2,
+    .player1WinCounter,
+    .player2WinCounter {
+        font-size: 15pt;
+    }
+}

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe</title>
+    <link rel="stylesheet" href="../css/GameBoardStyle.css">
+    <link href="https://fonts.googleapis.com/css2?family=Balsamiq:wght@100&family=Prompt:wght@500&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <a id="leaveGame" class="leave" href="#"> X </a>
+        <header class="header">
+            <h2 id="player1">Player 1</h2>
+            <h2><span class="player1WinCounter">0</span> : <span class="player2WinCounter">0</span></h2>
+            <h2 id="player2">Player 2</h2>
+        </header>
+        <div class="gameBoard">
+            <div id="block1" class="blocks"></div>
+            <div id="block2" class="blocks"></div>
+            <div id="block3" class="blocks"></div>
+            <div id="block4" class="blocks"></div>
+            <div id="block5" class="blocks"></div>
+            <div id="block6" class="blocks"></div>
+            <div id="block7" class="blocks"></div>
+            <div id="block8" class="blocks"></div>
+            <div id="block9" class="blocks"></div>
+
+            <div class="popUpMessage">
+                <h2><span class="congratulations"></span> <span class="winnerPlayer"></span></h2>
+                <h3>YOU ARE <span class="roundStatus"></span></h3>
+                <div class="nextEven">
+                    <a class="continue" onclick="backToLGameAgain()" href="#">Continue</a>
+                    <a class="leave" href="#"> Leave</a>
+                </div>
+            </div>
+            <div class="questionReloadLastGame">
+                <h3>you are not complete your previous game .So, would you like to ?</h3>
+                <div class="nextEven">
+                    <a class="newGame" href="#">play new game</a>
+                    <span> or </span>
+                    <a class="continuePlay" href="#"> continue play</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Scripts -->
+    <!-- linking to jQuery file -->
+    <script src="https://code.jquery.com/jquery-3.3.1.js" defer></script>
+    <!-- linking to javascript file -->
+    <script src="../js/javascript.js" defer></script>
+    <script src="../js/refresh.js" defer></script>
+    <!-- End Scripts -->
+</body>
+
+</html>
