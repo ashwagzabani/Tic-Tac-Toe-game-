@@ -1,4 +1,4 @@
-# Project Titel: TIC TAC TOE GAME
+# TIC TAC TOE GAME
 
 A simple version of TIC TAC TOE game 
 
@@ -41,4 +41,4 @@ Project is created with:
 * Allow two players to play online with each other
 
 ## Setup
-There is no need to setup the game and to run this project click [here
+There is no need to setup the game and to run this project click [here](https://ashwagzabani.github.io/Tic-Tac-Toe-game-/)
